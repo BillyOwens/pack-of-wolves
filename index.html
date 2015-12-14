@@ -5,7 +5,7 @@
 <title>pack of wolves</title>
 <link href="jquery.mobile-1.0a3.min.css" rel="stylesheet" type="text/css"/>
 <link rel="stylesheet" href="themes/myApp.min.css" />
-<link href="css/newCSS.css" rel="stylesheet" type="text/css"/>
+<link href="css/mycss.css" rel="stylesheet" type="text/css"/>
 
 <script src="jquery-1.5.min.js" type="text/javascript"></script>
 
@@ -24,7 +24,8 @@ var page4ListCounter = 0;
 <script src="jquery.mobile-1.0a3.min.js" type="text/javascript"></script>
 <script src="js/code.js" type="text/javascript"></script>
 <script src="js/buttonHandlers.js" type="text/javascript"></script>
-
+<script src="js/db.js" type="text/javascript"></script>
+<script src="js/app.js" type="text/javascript"></script>
 
 </head> 
 <!-----Beginning of Body Content ------->
@@ -34,7 +35,7 @@ var page4ListCounter = 0;
 <!----Beginning of page one ------>
 
 <div data-role="page" id="page" style="background-image: url('images/background.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
-    data-theme="u">
+    data-theme="">
 	<div data-role="header" align="center">			<!-- this data theme will do whole page only needed once -->
 		
 		
@@ -53,14 +54,14 @@ var page4ListCounter = 0;
        
 	</div>
 		
-		<div data-role="content" data-theme="u" align="center">
+		<div data-role="content" data-theme="e" align="center">
 			
-			<!--<p><a href="sms:0868620488, 0868620499, 000340034"> --><img src="images/foto1.jpg" width"80%" height"180"  align="centre" style="position:relative; top:50%; margin-left: -18px; margin-top: -18px"
+			<p><a href="sms:0868620488, 0868620499, 000340034"> <img src="images/foto1.jpg" width"80%" height"180"  align="centre" style="position:relative; top:50%; margin-left: -18px; margin-top: -18px"
 			></a></p></h1>
 			
 			</div>
 	
-	<div data-role="content" data-theme="u">
+	<div data-role="content" data-theme="e">
 		
 		
 		
@@ -98,9 +99,8 @@ var page4ListCounter = 0;
 <!--------------------------- PUT IN YOUR EMAIL BELOW ------------------------------------>
 
 <a href="mailto:info@n3xtg3nov8ion.com" class="ui-btn-left ui-btn ui-btn-corner-all ui-shadow 
-ui-btn-up-a" data-theme="u"> Contact Us </a>
+ui-btn-up-a" data-theme="b"> Contact Us </a>
 </br>
-
 
 
 
@@ -135,17 +135,16 @@ id="b" target="_blank" data-theme="a">
 	
 <!---------------------beginning of navbar / CHANGE THE WORDS IN WHITE TO APPEAR ON BUTTONS -->
 		
-		<div data-role="footer" data-position="fixed" data-id="footer" data-theme="g">
+		<div data-role="footer" data-position="fixed" data-id="footer" data-theme="e">
 			
 			
 		<div data-role="navbar">
 			<ul>
-				<li><a href="#page2">Summer Breaks</a></li>
-            <li><a href="#page3">Winter Breaks</a></li>
-			<li><a href="#page4">City Breaks</a></li>
-         	<li><a href="#page5">Videos + Pics</a></li>
-         	<li><a href="#page6">Bookings</a></li>
-		</ul><!--end of list for navbar-->
+				<li><a href="#page2" data-role="button" data-icon="arrow-r">Summer Breaks</a></li>
+				<li><a href="#page3" data-role="button" data-icon="arrow-r">Winter Breaks</a></li>
+				<li><a href="#page4" data-role="button" data-icon="arrow-r">City Breaks</a></li>
+				<li><a href="#page5" data-role="button" data-icon="arrow-r">Videos / Pics</a></li>
+				<li><a href="#page6" data-role="button" data-icon="arrow-r">Credits</a></li>			</ul><!--end of list for navbar-->
 			</div><!--end of navbar-->
 		</div><!--end of data-role footer-->
 </div>
@@ -156,37 +155,29 @@ id="b" target="_blank" data-theme="a">
 
 		
 	<div data-role="page" id="page2" style="background-image: url('images/background.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
-    data-theme="f">
+    data-theme="b">
 	
 	
 	
-	<div data-role="header" id="page2Header" data-theme="f">
+	<div data-role="header" id="page2Header" data-theme="a">
 		<h1>Summer Breaks</h1>
 		<a href="#page" data-icon="home" data-iconpos="notext">Home</a>
 	</div>
 	
 		
-	<div data-role="content" data-theme="">			<!-- this is where the back board lies -->
+	<div data-role="content" data-theme="b">			<!-- this is where the back board lies -->
 		
-		<div id="userLocation"></div>
 		
     	<h4 style="text-align:center;">
-    	<p><img src="images/foto1.jpg" width"80%" height"180"  align="centre" style="position:relative; top:50%; margin-left: -18px; margin-top: -18px"
-			></a></p>
+    	<p>
+			<img src="images/foto1.jpg" width"80%" height"180"  align="centre" style="position:relative; top:50%; margin-left: -18px; margin-top: -18px"></a></p>
 	
 		<div class="ui-grid-a" id="contact_infos" align="center" id="testingAjax1">
           	
           	<a id="testingAjax1" data-role="button" data-theme="f" data-collapsed="true"  onclick="text1()">Majorca</a>
           </div>
-    
-    <!--      	
-		<a class="twitter-timeline"  href="https://twitter.com/webbdevv"  data-widget-id="407647530051043329">Tweets by @WebDevv</a>
-		
-		-->
-		
-	</div>
-	
-	<div>
+          
+          <div>
 	<h4 style="text-align:center;">
             	<p><img src="images/foto2.jpg" width"80%" height"180"  align="centre" style="position:relative; top:50%; margin-left: -18px; margin-top: -18px"></p></h1>
             	
@@ -209,18 +200,28 @@ id="b" target="_blank" data-theme="a">
             	 	<a id="testingAjax4" data-role="button" data-theme="f" data-collapsed="true"  onclick="text4()">Algarve</a>
          
           </div>
+    
+  	</div>
+	
+	<!--<div>
+	<h1 style="text-align:center;">
+            	<p><img src="images/foto2.jpg" width"80%" height"180"  align="centre" style="position:relative; top:50%; margin-left: -18px; margin-top: -18px"></p></h1>
+            	
+            	 	<a id="testingAjax2" data-role="button" data-theme="b" data-collapsed="true"  onclick="text2()">Volcanoes </a>
+         
+          </div>-->
 	
 <div><h4><p>&copy; N3xt G3nov8ion 2015</p></h4></div>
 
-	<div data-role="footer" data-position="fixed" data-id="MarkBillfooter" data-theme="f">
+	<div data-role="footer" data-position="fixed" data-id="MarkBillfooter" data-theme="e">
 		<!--beginning of navbar--><div data-role="navbar">
 			<ul>
-				<li><a href="#page2">Summer Breaks</a></li>
-            <li><a href="#page3">Winter Breaks</a></li>
-			<li><a href="#page4">City Breaks</a></li>
-         	<li><a href="#page5">Videos + Pics</a></li>
-         	<li><a href="#page6">Bookings</a></li>
-		</ul><!--end of list for navbar-->
+				<li><a href="#page2" data-role="button" data-icon="arrow-r">Summer Breaks</a></li>
+				<li><a href="#page3" data-role="button" data-icon="arrow-r">Winter Breaks</a></li>
+				<li><a href="#page4" data-role="button" data-icon="arrow-r">City Breaks</a></li>
+				<li><a href="#page5" data-role="button" data-icon="arrow-r">Videos / Pics</a></li>
+				<li><a href="#page6" data-role="button" data-icon="arrow-r">Credits</a></li>
+			</ul><!--end of list for navbar-->
 			</div><!--end of navbar-->
 		</div><!--end of data-role footer-->
 </div>
@@ -228,8 +229,8 @@ id="b" target="_blank" data-theme="a">
 <!------------------------beginning of page 3------------------------------------------------>
 
 <div data-role="page" id="page3" style="background-image: url('images/background.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
-    data-theme="i">
-	<div data-role="header" id="page3Header" data-theme="i">
+    data-theme="b">
+	<div data-role="header" id="page3Header" data-theme="a">
 		<h1>Winter Breaks</h1>
 		<a href="#page" data-icon="home" data-iconpos="notext">Home</a>
 	</div>
@@ -240,14 +241,18 @@ id="b" target="_blank" data-theme="a">
         </ul>		
         <a id="page3ListButton" data-role="button" data-theme="b">Fantasty Football Team</a> -->	
             	
-        <div>
-	<h4 style="text-align:center;">
-            	<p><img src="images/foto5.jpg" width"80%" height"180"  align="centre" style="position:relative; top:50%; margin-left: -18px; margin-top: -18px"></p></h1>
-            	
-            	 	<a id="testingAjax5" data-role="button" data-theme="i" data-collapsed="true"  onclick="text5()">French Alps </a>
          
-          </div>
+        
+            	
+          <div class="ui-grid-a" id="contact_infos" align="center" id="testingAjax2">
+          	<h3>Winter Breaks</h3>
+          	<p><p><img src="images/foto5.jpg" width"80%" height"180"  align="centre" style="position:relative; top:50%; margin-left: -18px; margin-top: -18px"></p></h1>
+            	
+            	 	<a id="testingAjax5" data-role="button" data-theme="i" data-collapsed="true"  onclick="text5()">French Alps </a></div>
          	
+          	<!--<a id="testingAjax3" data-role="button" data-theme="b" data-collapsed="true"  onclick="text3()">Girl Science</a>->
+          </div>-->
+          
           	<div>
 	<h1 style="text-align:center;">
             	<p><img src="images/foto6.jpg" width"80%" height"180"  align="centre" style="position:relative; top:50%; margin-left: -18px; margin-top: -18px"></p></h1>
@@ -278,15 +283,15 @@ id="b" target="_blank" data-theme="a">
 	</div>
 	
 	
-	<div data-role="footer" data-position="fixed" data-id="footer" data-theme="i">
+	<div data-role="footer" data-position="fixed" data-id="footer" data-theme="e">
 		<div data-role="navbar">
 			<ul>
-				<li><a href="#page2">Summer Breaks</a></li>
-            <li><a href="#page3">Winter Breaks</a></li>
-			<li><a href="#page4">City Breaks</a></li>
-         	<li><a href="#page5">Videos + Pics</a></li>
-         	<li><a href="#page6">Bookings</a></li>
-		</ul><!--end of list for navbar-->
+				<li><a href="#page2" data-role="button" data-icon="arrow-r">Summer Breaks</a></li>
+				<li><a href="#page3" data-role="button" data-icon="arrow-r">Winter Breaks</a></li>
+				<li><a href="#page4" data-role="button" data-icon="arrow-r">City Breaks</a></li>
+				<li><a href="#page5" data-role="button" data-icon="arrow-r">Videos / Pics</a></li>
+				<li><a href="#page6" data-role="button" data-icon="arrow-r">Credits</a></li>
+			</ul><!--end of list for navbar-->
 			</div><!--end of navbar-->
 		</div><!--end of data-role footer-->
 	
@@ -295,23 +300,24 @@ id="b" target="_blank" data-theme="a">
 <!------------------------beginning of page 4--------->
 
 <div data-role="page" id="page4" style="background-image: url('images/background.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
-    data-theme="j">
-	<div data-role="header" data-theme="j">
+    data-theme="b">
+	<div data-role="header" data-theme="a">
 		<h1>City Breaks</h1>
 		<a href="#page" data-icon="home" data-iconpos="notext">Home</a>
 	</div>
 	
 	<div data-role="content" data-theme="">
 		
-    	<div>
-	<h4 style="text-align:center;">
-            	<p><img src="images/foto9.jpg" width"80%" height"180"  align="centre" style="position:relative; top:50%; margin-left: -18px; margin-top: -18px"></p></h1>
+		
+		<div>
+    	<h1 style="text-align:center;">
+    	<p><img src="images/foto9.jpg" width"80%" height"180"  align="centre" style="position:relative; top:50%; margin-left: -18px; margin-top: -18px"></p></h1>
             	
             	 	<a id="testingAjax9" data-role="button" data-theme="j" data-collapsed="true"  onclick="text9()">Belfast </a>
          
           </div>
-		  
-		  <div>
+          
+          <div>
 	<h4 style="text-align:center;">
             	<p><img src="images/foto10.jpg" width"80%" height"180"  align="centre" style="position:relative; top:50%; margin-left: -18px; margin-top: -18px"></p></h1>
             	
@@ -339,8 +345,7 @@ id="b" target="_blank" data-theme="a">
        	<iframe width="80%" height="300" src="https://www.youtube.com/embed/IUh72Q_BBIE" frameborder="0" allowfullscreen></iframe>
        	 </div>  
 
-	
-	<div data-role="content" data-theme="j">
+<div data-role="content" data-theme="j">
 	 <!--this is the text that will change in the page3testAjax Button function based on w3schools -->
          <center><a id="page3Text"  ><h4>What Capital is furthest North?</h4></a></center>
          <!--this sample ajax change text is taken from w3schools-->
@@ -384,6 +389,7 @@ $.getJSON("https://api.twitter.com/1/statuses/user_timeline/nextg3novation.json?
    <br />
   
   
+  
 	</div>
 	
 	
@@ -391,15 +397,15 @@ $.getJSON("https://api.twitter.com/1/statuses/user_timeline/nextg3novation.json?
 		<h4><p>&copy; N3xt Genov8ion 2015</p></h4>
 	</div>
 	
-	<div data-role="footer" data-position="fixed" data-id="" data-theme="j">
+	<div data-role="footer" data-position="fixed" data-id="" data-theme="e">
 		<div data-role="navbar">
 			<ul>
-				<li><a href="#page2">Summer Breaks</a></li>
-            <li><a href="#page3">Winter Breaks</a></li>
-			<li><a href="#page4">City Breaks</a></li>
-         	<li><a href="#page5">Videos + Pics</a></li>
-         	<li><a href="#page6">Bookings</a></li>
-		</ul><!--end of list for navbar-->
+				<li><a href="#page2" data-role="button" data-icon="arrow-r">Summer Breaks</a></li>
+				<li><a href="#page3" data-role="button" data-icon="arrow-r">Winter Breaks</a></li>
+				<li><a href="#page4" data-role="button" data-icon="arrow-r">City Breaks</a></li>
+				<li><a href="#page5" data-role="button" data-icon="arrow-r">Videos / Pics</a></li>
+				<li><a href="#page6" data-role="button" data-icon="arrow-r">Credits</a></li>
+			</ul><!--end of list for navbar-->
 			</div><!--end of navbar-->
 		</div><!--end of data-role footer-->
 	
@@ -410,12 +416,24 @@ $.getJSON("https://api.twitter.com/1/statuses/user_timeline/nextg3novation.json?
 
 
 <div data-role="page" id="page5" style="background-image: url('images/background.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
-    data-theme="u">
+    data-theme="b">
 	
 	
 	
 	
-	<div data-role="header" data-theme="">
+	<div data-role="header" data-theme="a">
+		<h1>Videos</h1>
+		<center></center><iframe width="80%" height="315" src="https://www.youtube.com/embed/pPsEqcOb2ZY" frameborder="0" allowfullscreen></iframe></center>
+</div>
+<div data-role="content" data-theme="">
+		
+    	<h1 style="text-align:center;">
+    		
+    	<p><img src="images/foto4.jpg" width"80%" height"180"  align="centre" style="position:relative; top:50%; margin-left: -18px; margin-top: -18px"></p></h1>
+		 
+		  	<a id="testingAjax4" data-role="button" data-theme="e" data-collapsed="true"  onclick="text4()">How to deal with someone choking </a>
+         
+		<div data-role="header" data-theme="">
 		<h1>Videos</h1>
 		<a href="#page" data-icon="home" data-iconpos="notext">Gallery</a>
 	</div>
@@ -430,11 +448,9 @@ $.getJSON("https://api.twitter.com/1/statuses/user_timeline/nextg3novation.json?
 	
 	<div align="center" >
 	<div id="player"></div></div>
+	</div>
+
 	
-	<div align="center">
-		
-		<h3>.</h3>
-		
 		  
     <!--<source src="horse.ogg" type="audio/ogg"></source>-->
     
@@ -447,7 +463,8 @@ $.getJSON("https://api.twitter.com/1/statuses/user_timeline/nextg3novation.json?
   					-->
    
 		
-  				</div>
+		
+  				
 	
 	
 	<div>
@@ -456,15 +473,15 @@ $.getJSON("https://api.twitter.com/1/statuses/user_timeline/nextg3novation.json?
 	
 	
 	
-	<div data-role="footer" data-position="fixed" data-id="" data-theme="u">
+	<div data-role="footer" data-position="fixed" data-id="" data-theme="e">
 		<div data-role="navbar">
 			<ul>
-				<li><a href="#page2">Summer Breaks</a></li>
-            <li><a href="#page3">Winter Breaks</a></li>
-			<li><a href="#page4">City Breaks</a></li>
-         	<li><a href="#page5">Videos + Pics</a></li>
-         	<li><a href="#page6">Bookings</a></li>
-		</ul><!--end of list for navbar-->
+				<li><a href="#page2" data-role="button" data-icon="arrow-r">Summer Breaks</a></li>
+				<li><a href="#page3" data-role="button" data-icon="arrow-r">Winter Breaks</a></li>
+				<li><a href="#page4" data-role="button" data-icon="arrow-r">City Breaks</a></li>
+				<li><a href="#page5" data-role="button" data-icon="arrow-r">Videos / Pics</a></li>
+				<li><a href="#page6" data-role="button" data-icon="arrow-r">Credits</a></li>
+			</ul><!--end of list for navbar-->
 			</div><!--end of navbar-->
 		</div><!--end of data-role footer-->
 	
@@ -481,34 +498,29 @@ $.getJSON("https://api.twitter.com/1/statuses/user_timeline/nextg3novation.json?
 <!------------------------beginning of page 6--------->
 
 <div data-role="page" id="page6" style="background-image: url('images/background.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
-    data-theme="u">
+    data-theme="b">
 	
 	
 	
-	<div data-role="header" data-theme="u">
+	<div data-role="header" data-theme="a">
 		<h1>Location</h1>
 		
-		<a href="#page" data-icon="home" data-iconpos="notext">home</a>
+	<a href="#page" data-icon="home" data-iconpos="notext">home</a>
 		<a href="https://www.expedia.co.uk/Flights" 
 		data-icon="gear" data-theme="u" class="ui-btn-right">Book Flights</a>
-	
 		
 		</div>
 		
 	
 	<div data-role="content" data-theme="">
 		
-	
+	<div>
 	<h1 style="text-align:center;">
     	<p><img src="images/foto12.jpg" width"80%" height"180"  align="centre" style="position:relative; top:50%; margin-left: -18px; margin-top: -18px"></p></h1>
 		
 	</div>
 	
-	<!--<div id="userLocation" data-theme="u"></div>-->
-	
-	
-	
-		<div align="center">
+	<div align="center">
 			
 			<h2><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2383.426744275067!2d-6.316347757368466!3d53.317712092358576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670c7d1008a711%3A0x340fcbcd79061475!2sChurch+of+Saint+Agnes!5e0!3m2!1sen!2sie!4v1449695450401"
 				 width="80%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -522,42 +534,47 @@ $.getJSON("https://api.twitter.com/1/statuses/user_timeline/nextg3novation.json?
 			</p></font>
 	
 	</div>
+		
+			
 	
-	<div> 
+	</div>
+	
+	 <!--map 
+		<section id="section-map" class="clearfix">
+			<div id="map"></div>-->
+	 
+				<div> 
 				<p><textarea id="textbox" style="width:350px; height:150px"></textarea></p>
   <p><button type="button" id="button" onclick="startFetch(100, 500)">
     Fetch random Wikipedia extract</button></p>
     
 				</div>
-
 		
 	
 	<div>
-		<font color="#F70810;"><p>&copy; Special Thanks to our Partners in the Canal Partnerships</p></h4>
-		<p><img src="images/logo-Canal.jpg" width"80%" height""  align="center"></p></font>
+		
 		
 		<h4><p>&copy; N3xt G3nov8ion 2015</p></h4>
 	</div>
 	
 	
 	
-	<div data-role="footer" data-position="fixed" data-id="" data-theme="u">
+	<div data-role="footer" data-position="fixed" data-id="" data-theme="e">
 		<div data-role="navbar">
 			<ul>
+				<li><a href="#page2" data-role="button" data-icon="arrow-r">Summer Breaks</a></li>
+				<li><a href="#page3" data-role="button" data-icon="arrow-r">Winter Breaks</a></li>
+				<li><a href="#page4" data-role="button" data-icon="arrow-r">City Breaks</a></li>
+				<li><a href="#page5" data-role="button" data-icon="arrow-r">Videos / Pics</a></li>
+				<li><a href="#page6" data-role="button" data-icon="arrow-r">Credits</a></li>
 				
-			<li><a href="#page2">Summer Breaks</a></li>
-            <li><a href="#page3">Winter Breaks</a></li>
-			<li><a href="#page4">City Breaks</a></li>
-         	<li><a href="#page5">Videos + Pics</a></li>
-         	<li><a href="#page6">Bookings</a></li>
-		</ul><!--end of list for navbar-->
+				
+			</ul><!--end of list for navbar-->
 			</div><!--end of navbar-->
 		</div><!--end of data-role footer-->
 	
 	
-	
 </div>
-
 <!--Twitter Embedded Timeline js script-->
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
@@ -595,33 +612,6 @@ $.getJSON("https://api.twitter.com/1/statuses/user_timeline/nextg3novation.json?
 
 
 <!--END OF Include file for button handlers -->
-
- <!--<script>
-
-if (navigator && navigator.geolocation) {
-
-	navigator.geolocation.getCurrentPosition(userLocated, locationError);
-
-} else {
-	error('positioning not supported.');
-}
-
-
-function userLocated(position) {
-	var lat = position.coords.latitude;
-	var long = position.coords.longitude;
-	var locateTime = new Date(position.timestamp);
-	var locationDiv = document.getElementById("userLocation");
-	locationDiv.innerHTML = "Your Location at time: " + locateTime + " is Lat: " + lat + " Long: " + long; 
-}
-
-function locationError(error) {
-	var locationDiv = document.getElementById("userLocation");
-	locationDiv.innerHTML = "Cannot Locate You due to the following error: " + error.code + " Message: " + error.message;
-	//alert(error.code);
-}
-
-</script> 
 
 <script type="text/javascript">
 
@@ -679,8 +669,6 @@ function locationError(error) {
     }
 
   </script>
-  
-  -->
 
 
 </body> 
